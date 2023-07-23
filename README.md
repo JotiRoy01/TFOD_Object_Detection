@@ -63,3 +63,18 @@ pip freeze
 pip freeze | grep <packagesname>
  ```
 
+## Test your Installation - 
+```bash
+python object_detection/builders/model_builder_tf2_test.py
+```
+
+## Run example
+- Create workspace/example_1 directory in project root
+ ```bash
+ mkdir -p workspace/example_1
+ cd workspace/example_1
+ ```
+- Download notebook
+```bash
+curl https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/_downloads/55b1ed8e083cbc9ca3bfc1c18eb6b860/plot_object_detection_saved_model.ipynb > plot_object_detection_saved_model.ipynb
+```
