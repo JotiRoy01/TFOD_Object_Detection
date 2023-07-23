@@ -22,3 +22,19 @@ git clone https://github.com/tensorflow/models.git
 ```
 remove .git directory of models repository to avoid git conflicts
 add models folder to .gitignore
+
+add models folder to .gitignore
+```bash
+echo "TensorFlow/models" >> .gitignore
+```
+## Download protoc 
+- https://github.com/protocolbuffers/protobuf/releases
+
+## Add protoc builder.py file
+```bash
+curl https://raw.githubusercontent.com/protocolbuffers/protobuf/main/python/google/protobuf/internal/builder.py > env\Lib\site-packages\google\protobuf\internal
+```
+## Message "note: This error originates from a subprocess, and is likely not a problem with pip"
+```bash
+pip install pyodbc
+```
