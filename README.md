@@ -38,3 +38,5 @@ curl https://raw.githubusercontent.com/protocolbuffers/protobuf/main/python/goog
 ```bash
 pip install pyodbc
 ```
+
+- Unzip into root folder and add '<PATH TO path folder>/bin' into system environment variables
