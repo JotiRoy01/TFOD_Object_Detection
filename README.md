@@ -78,3 +78,10 @@ python object_detection/builders/model_builder_tf2_test.py
 ```bash
 curl https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/_downloads/55b1ed8e083cbc9ca3bfc1c18eb6b860/plot_object_detection_saved_model.ipynb > plot_object_detection_saved_model.ipynb
 ```
+
+## Custom Model Training
+```bash
+mkdir workspace/training_demo 
+cd workspace/training_demo
+mkdidr -p annotations exported-models models pre-trained-models images/test images/train
+```
