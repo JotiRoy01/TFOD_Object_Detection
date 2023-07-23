@@ -129,17 +129,6 @@ dmypy.json
 .pyre/
 
 TensorFlow/models
-protoc/bin/protoc.exe
-protoc/include/google/protobuf/any.proto
-protoc/include/google/protobuf/api.proto
-protoc/include/google/protobuf/descriptor.proto
-protoc/include/google/protobuf/duration.proto
-protoc/include/google/protobuf/empty.proto
-protoc/include/google/protobuf/field_mask.proto
-protoc/include/google/protobuf/source_context.proto
-protoc/include/google/protobuf/struct.proto
-protoc/include/google/protobuf/timestamp.proto
-protoc/include/google/protobuf/type.proto
-protoc/include/google/protobuf/wrappers.proto
-protoc/include/google/protobuf/compiler/plugin.proto
+protoc/
 TensorFlow/envLibsite-packagesgoogleprotobufinternal
+TensorFlow/models

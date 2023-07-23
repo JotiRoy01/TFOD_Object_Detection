@@ -40,3 +40,25 @@ pip install pyodbc
 ```
 
 - Unzip into root folder and add '<PATH TO path folder>/bin' into system environment variables
+
+- run The following command
+```bash
+cd TensorFlow/models/research
+protoc object_detection/protos/*.proto --python_out=.
+```
+## Install COCO API
+```bash
+pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
+```
+
+## Install Object Detection API
+
+```bash
+cp object_detection/packages/tf2/setup.py .
+python -m pip install .
+```
+## Check packages install or not
+```bash
+pip freeze
+pip freeze | grep <packagesname>
+```
