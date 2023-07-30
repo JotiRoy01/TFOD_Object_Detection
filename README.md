@@ -129,3 +129,25 @@ SSD ResNet50 V1 FPN 640x640 (RetinaNet50)
 
 ## Configure the training pipeline
 - create a folder my_ssd_resnet50_v1_fpn in training_demo/models folder
+- copy pipeline.config here from pre-trained-model directory
+- update it as per the documentation - [link](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html)
+
+## Copy training file from TensorFlow/models/research/object_detectio/ to the root of training_demo folder
+```bash
+cp ../../TensorFlow/models/research/object_detection/model_main_tf2.py .
+
+- end of the line "." -> it means destinations folder now it's root directory(training_demo)
+```
+
+## Start training by running the following commad - 
+```bash
+python model_main_tf2.py --model_dir=models/my_ssd_resnet50_v1_fpn --pipeline_config_path=models/my_ssd_resnet50_v1_fpn/pipeline.config
+```
+
+## Exporting a Trained Model
+```bash
+cp ../../TensorFlow/models/research/object_detection/exporter_main_v2.py .
+
+
+python ./exporter_main_v2.py --input_type image_tensor --pipeline_config_path ./models/my_ssd_resnet50_v1_fpn/pipeline.config --trained_checkpoint_dir ./models/my_ssd_resnet50_v1_fpn/ --output_directory ./exported-models/my_model
+```
